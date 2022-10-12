@@ -13,6 +13,27 @@ const Starships = () => {
     fetchAllStarships()
   }, [])
 
-  
+
+  return (
+    <>
+      <div>
+        <h3>Starships</h3>
+        <div className="icon-container">
+          {starships.map((starshipName, index) =>
+            <Link 
+            key={starshipName.index}
+            to='/starship'
+            state={{starshipName}} >
+              <div className="class-div">
+                {starshipName.name}
+              </div>
+            </Link>
+          )}
+        </div>
+      </div>
+    </>
+  );
 
 }
+
+export default Starships
