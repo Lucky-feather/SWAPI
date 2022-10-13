@@ -35,6 +35,9 @@ a {
   text-align: center;
 }
 
+a:hover {
+  font-family: 'Fuzzy Bubbles', cursive;
+}
 
 
 header {

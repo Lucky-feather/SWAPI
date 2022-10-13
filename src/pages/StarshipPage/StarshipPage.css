@@ -6,8 +6,6 @@
 }
 
 
-
-
 .ship {
   display: flex;
   width: 80%;
@@ -36,13 +34,16 @@
   font-weight: bold;
   font-size: 15px;
   text-align: center;
-  padding: 5%;
+  padding: 10% 5% 5%;
 }
 
-a:hover {
+.shipCard:hover {
   font-family: 'Fuzzy Bubbles', cursive;
 }
 
+link {
+  margin: 0;
+}
 
 header {
   display: flex;
