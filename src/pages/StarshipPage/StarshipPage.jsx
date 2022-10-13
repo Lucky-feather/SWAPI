@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom'
 import { getDetails } from '../../services/sw-api'
 
 
+
 const StarshipPage = () => {
   const [starshipPage, setStarshipPage] = useState({})
   const location = useLocation()
@@ -20,7 +21,7 @@ const StarshipPage = () => {
   
   return (
     <>
-      <div>
+      <div className="shipCard">
         {StarshipPage.name ?
         <>
         <div>NAME: {starshipPage.name}</div>

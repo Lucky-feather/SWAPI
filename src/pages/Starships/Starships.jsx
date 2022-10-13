@@ -1,3 +1,4 @@
+import './Starships.css'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { getAllStarships } from '../../services/sw-api'
@@ -17,7 +18,9 @@ const Starships = () => {
   return (
     <>
       <div>
-        <h3>Starships</h3>
+        <header>
+          <h3>Starships</h3>
+        </header>
         <div className="icon-container">
           {starships.map((starshipName, index) =>
             <Link 
