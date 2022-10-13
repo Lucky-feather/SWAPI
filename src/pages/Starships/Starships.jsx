@@ -6,7 +6,7 @@ const Starships = () => {
   const [starships, setStarships] = useState([])
 
   useEffect(() => {
-    const fetchAllStarships = async () =>{
+    const fetchAllStarships = async () => {
       const starshipsData = await getAllStarships()
       setStarships(starshipsData.results)
     }
@@ -21,13 +21,14 @@ const Starships = () => {
         <div className="icon-container">
           {starships.map((starshipName, index) =>
             <Link 
-            key={starshipName.index}
+            key={index}
             to='/starship'
             state={{starshipName}} >
               <div className="class-div">
                 {starshipName.name}
               </div>
             </Link>
+
           )}
         </div>
       </div>
