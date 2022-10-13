@@ -17,9 +17,9 @@ const Starships = () => {
 
   return (
     <>
-      <div>
+      <div classname="body">
         <header>
-          <h3>Starships</h3>
+          <h3>Star Wars Starships</h3>
         </header>
         <div className="icon-container">
           {starships.map((starshipName, index) =>

@@ -1,3 +1,4 @@
+import './StarshipPage.css'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
@@ -21,18 +22,24 @@ const StarshipPage = () => {
   
   return (
     <>
-      <div className="shipCard">
+    <header>
+      <h3>Star Wars Starships</h3>
+      </header>
+      <body>
+        <div className="shipCard">
         {StarshipPage.name ?
         <>
-        <div>NAME: {starshipPage.name}</div>
-        <div>MODEL: {starshipPage.model}</div>
-        <Link to='/'>back</Link>
-        </>:
+        <div className='ship'>NAME: {starshipPage.name}</div>
+        <div className='ship'>MODEL: {starshipPage.model}</div>
+        <Link to='/'>back</Link>     
+        </>
+:
         <>
           <p>Loading details...</p>
         </>
         }
       </div>
+      </body>
     </>
   );
 }
